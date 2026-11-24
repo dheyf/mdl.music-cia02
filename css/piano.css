@@ -1,0 +1,118 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  background: #e8e0f2;
+  font-family: Arial, sans-serif;
+  color: #28183d;
+}
+
+.container {
+  max-width: 500px;
+  margin: auto;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(54, 29, 83, 0.12);
+}
+
+h2 {
+  font-size: 21px;
+  color: #48236f;
+}
+
+.subtitle {
+  color: #756487;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.product {
+  display: flex;
+  gap: 12px;
+  margin: 25px 0;
+}
+
+.product img {
+  width: 100px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.product-info {
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.price {
+  margin-top: 20px;
+}
+
+.line {
+  display: flex;
+  justify-content: space-between;
+  margin: 14px 0;
+  font-size: 14px;
+}
+
+.discount {
+  color: #7139a5;
+}
+
+.total {
+  font-size: 19px;
+  font-weight: bold;
+  color: #48236f;
+}
+
+.saved {
+  color: #7139a5;
+  text-align: right;
+  font-size: 13px;
+}
+
+.points {
+  background: #e9def6;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #542b80;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 20px;
+  border: none;
+  background: #51277d;
+  color: white;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #35164f;
+}
+.payment-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+    font-size: 15px;
+    color: #333;
+}

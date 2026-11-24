@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/piano.css">
+    <title>Resumo do Pedido</title>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>Resumo do Pedido</h2>
+
+        <p class="subtitle">
+            Prossiga para aplicar descontos e benefícios da conta
+            e depois confirme o preço final.
+        </p>
+
+        <div class="product">
+
+            <img src="./imgs/piano.png" alt="Produto ">
+
+            <div class="product-info">
+                <strong>Piano</strong>
+                <br>
+                Instrumento musical
+                <br>
+                Marca: Stradivarius "Barão Knoop"
+            </div>
+
+        </div>
+
+        <div class="price">
+
+            <div class="line">
+                <span>Preço de varejo:</span>
+                <strong>R$ 900,00</strong>
+            </div>
+
+            <div class="line">
+                <span>Promoções:</span>
+                <strong class="discount">- R$ 20.00</strong>
+            </div>
+
+            <hr>
+
+            <div class="line total">
+                <span>Preço estimado:</span>
+                <span id="total">R$ R$ 900.00</span>
+            </div>
+
+            <p class="saved">
+                Salvo R$ 20.00
+            </p>
+
+        </div>
+
+        <div class="points">
+            <strong>Recompensa</strong>
+            <br><br>
+            ⭐ 5 Pontos Music&Cia
+            <br><br>
+            Aplique um código de cupom e pontos
+            Music&Cia na próxima etapa.
+        </div>
+
+        <h3>Pagamento</h3>
+
+       
+    <div class="line">
+        <span>Pix</span>
+        <span>⚡</span>
+    </div>
+
+    <div class="line">
+        <span>Cartão de crédito</span>
+        <span>💳</span>
+    </div>
+
+    <div class="line">
+        <span>Cartão de débito</span>
+        <span>💳</span>
+    </div>
+
+
+    <div class="line">
+        <span>Boleto bancário</span>
+        <span>🧾</span>
+    </div>
+
+    <div class="line">
+        <span>Transferência bancária</span>
+        <span>🏦</span>
+    </div> 
+
+        <a  href="instrumento.html" onclick="alert('Resumo do pedido confirmado!')">
+            Continuar
+        </a>
+
+    </div>
+
+    <script>
+        const preco = 900.00;
+        const desconto = 20.00;
+
+        const total = preco - desconto;
+
+        document.getElementById("total").textContent =
+            total.toLocaleString("pt-BR", {
+                style: "currency",
+                currency: "BRL"
+            });
+    </script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
